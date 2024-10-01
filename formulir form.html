@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Mahasiswa Baru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulir Pendaftaran Mahasiswa Baru</h2>
+    <form action="/submit-form" method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <div class="label">
+                <label for="name">Nama Lengkap:</label>
+            </div>
+            <div class="input">
+                <input type="text" id="name" name="name" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">
+                <label for="gender">Jenis Kelamin:</label>
+            </div>
+            <div class="input">
+                <select id="gender" name="gender" required>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">
+                <label for="age">Usia:</label>
+            </div>
+            <div class="input">
+                <input type="number" id="age" name="age" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">
+                <label for="address">Alamat:</label>
+            </div>
+            <div class="input">
+                <input type="text" id="address" name="address" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">
+                <label for="contact">Informasi Kontak:</label>
+            </div>
+            <div class="input">
+                <input type="text" id="contact" name="contact" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">
+                <label for="education">Pendidikan Sebelumnya:</label>
+            </div>
+            <div class="input">
+                <input type="text" id="education" name="education" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">
+                <label for="program">Program Studi yang Diinginkan:</label>
+            </div>
+            <div class="input">
+                <select id="program" name="program" required>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Teknik Elektro">Teknik Elektro</option>
+                    <option value="Teknik Mesin">Teknik Mesin</option>
+                    <option value="Teknik Sipil">Teknik Sipil</option>
+                    <option value="Teknik Lingkungan">Teknik Lingkungan</option>
+                    <option value="Teknik Geologi">Teknik Geologi</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Arsitektur">Arsitektur</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">
+                <label for="parent-job">Pekerjaan Orang Tua:</label>
+            </div>
+            <div class="input">
+                <input type="text" id="parent-job" name="parent_job" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="label">
+                <label for="photo">Unggah Foto:</label>
+            </div>
+            <div class="input">
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input" style="text-align: center; width: 100%;">
+                <button type="submit" class="submit-btn">Kirim Formulir</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
